@@ -1,5 +1,5 @@
 FROM centos:latest
 RUN yum install httpd -y 
-COPY  index.html /var/www/html
+COPY  /root/jenkins-ws/* /var/www/html
 CMD /usr/sbin/httpd -DFOREGROUND && /bin/bash
 EXPOSE 80 
