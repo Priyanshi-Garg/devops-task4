@@ -26,8 +26,8 @@ spec:
         env: production
     spec:
       containers:
-      - name: html-con
-        image: priyanshigarg/webserver:v1
+      - name: t4-con
+        image: priyanshigarg/webserver:latest
         volumeMounts:
         - name: web-vol1
           mountPath: /var/www/html
